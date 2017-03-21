@@ -4,102 +4,148 @@
 body {
     background-color: #232323;
 
-    header {
+}
+
+header {
+    background-color: black;
+    width: 100%;
+
+    .navbar {
         background-color: black;
-        width: 100%;
+        color: $fontcolor;
+        border: none;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: $abel;
+    }
 
-        .navbar {
-            background-color: black;
-            color: $fontcolor;
-            border: none;
-        }
+    .navbar-nav {
+        float: none;
+        text-align: center;
 
-        .navbar-nav {
+        li {
             float: none;
-            text-align: center;
-
-            li {
-                float: none;
-                display: inline-block;
-            }
-        }
-
-        .navbar-default .navbar-nav {
-            > .active > a,
-            > .active > a:hover,
-            > .active > a:focus {
-                background-color: transparent;
-                color: white;
-            }
-        }
-
-        div:nth-child(2) > div:nth-child(1) {
-            text-align: center;
-            color: white;
-            padding: 150px 0;
-            font-weight: bold;
-
-            h1 {
-                padding-bottom: 1em;
-                text-transform: uppercase;
-                font-size: 400%;
-            }
-
-            h2 {
-                font-size: 300%;
-            }
-
-            button {
-                @include button(white, #a28f61);
-                font-size: 15px;
-            }
-        }
-
-        div:nth-child(3) > div:nth-child(1) {
-            text-align: right;
-            padding-right: 5%;
-            font-size: 30px;
-            color: white;
+            display: inline-block;
         }
     }
 
-    main {
-        background-color: #f7f7f7;
-        width: 100%;
-        padding: 1em;
+    .navbar-default .navbar-nav {
+         > .active > a:focus,
+         > .active > a:hover,
+        > .active > a {
+            background-color: transparent;
+            color: white;
+
+        }
+    }
+
+    div:nth-child(2) > div:nth-child(1) {
+        text-align: center;
+        color: white;
+        padding: 150px 0;
+        font-weight: bold;
+
+        h1 {
+            padding-bottom: 1em;
+            text-transform: uppercase;
+            font-size: 400%;
+            font-family: $FontAbril;
+        }
 
         h2 {
-            text-align: center;
-            padding-bottom: 1em;
+            font-size: 300%;
+            font-family: $FontAbril;
+            margin: 0;
         }
 
-        article {
-            margin: auto;
-            background-color: white;
-
-            img {
-                width: 100%;
-                height: 15em;
-                margin: auto;
-            }
-
-            h3,
-            p {
-                padding-left: 1rem;
-            }
+        button {
+            @include button(white, $chocola);
+            font-size: 15px;
+            margin-top: 3em;
         }
     }
-    footer {
-        background-color: #0f3e57;
-        padding: 1em 1em;
-        h4 {
-            color: white;
+
+    div:nth-child(3) > div:nth-child(1) {
+        text-align: right;
+        padding-right: 5%;
+        font-size: 30px;
+        color: white;
+    }
+}
+
+main {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 2.5em 2.5em 5em 2.5em;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 1em;
+        font-family: $serif;
+        font-weight: bold;
+    }
+
+    article {
+        margin: auto auto 1em auto;
+        background-color: white;
+        border-radius: 5px;
+        padding-bottom: 0.5em;
+        font-family: $abel;
+
+
+        img {
+            width: 100%;
+            height: 15em;
+            margin: auto;
+            border-radius: 5px 5px 0 0;
         }
-        i {
-            color: white;
-            margin-right: 0.5em;
+        h3 {
+            color: $chocola;
+            margin-bottom: 0;
         }
+
+        .solde {
+            color: $solde;
+        }
+
+        h3,
         p {
+            padding-left: 1rem;
+        }
+        p:nth-child(3){
+            color: $fontcolor;
+            margin: 0;
+        }
+
+    }
+}
+
+footer {
+    background-color: #0f3e57;
+    padding: 2.5em;
+
+    h4 {
+        color: white;
+    }
+
+    i {
+        color: $fontcolor;
+        margin-right: 1em;
+    }
+
+    p {
+        color: $fontcolor;
+        display: flex;
+
+        button {
+            @include button(white, inherit);
+            // background-color: inherit;
+            margin-left: 0.3em;
+            padding: 0.3em;
+        }
+
+        a {
+            text-decoration: none;
             color: $fontcolor;
         }
     }
