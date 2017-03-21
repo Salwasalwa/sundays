@@ -1,0 +1,22 @@
+header {
+  background-color: black; }
+  header .navbar {
+    background-color: black;
+    color: #c9c4bf;
+    border: none; }
+  header .navbar-nav {
+    float: none;
+    text-align: center; }
+    header .navbar-nav li {
+      float: none;
+      display: inline-block; }
+  header .navbar-default .navbar-nav > .active > a:focus,
+  header .navbar-default .navbar-nav > .active > a:hover,
+  header .navbar-default .navbar-nav > .active > a {
+    background-color: transparent;
+    color: white; }
+  header div.container:nth-child(1) > div:nth-child(2) {
+    padding: 0;
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
