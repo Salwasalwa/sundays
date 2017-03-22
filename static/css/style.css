@@ -85,6 +85,10 @@ main {
     width: 90%; }
   main #slider #carousel-text {
     text-align: right; }
+    main #slider #carousel-text a {
+      text-decoration: none;
+      color: #a28f61;
+      font-size: 30px; }
     main #slider #carousel-text h3 {
       padding-bottom: 1em;
       font-family: "EB Garamond", serif;
@@ -97,13 +101,28 @@ main {
       padding: 0.5em 2em;
       font-size: 15px;
       padding: 0.5em 4em; }
-    main #slider #carousel-text h3:nth-child(4),
+    main #slider #carousel-text h3:nth-child(5),
     main #slider #carousel-text p {
       text-align: left; }
   main .hide-bullets {
     list-style: none;
     margin-left: -40px;
     margin-top: 20px; }
+  main #lePanier #titlePanier {
+    background-color: #281400;
+    color: white; }
+  main #lePanier td {
+    color: #281400;
+    font-size: 15px; }
+  main .btn-primary,
+  main .btn-primary:hover,
+  main .btn-success,
+  main .btn-success:hover {
+    color: white;
+    background-color: #a28f61;
+    border: 1px solid #a28f61;
+    border-radius: 3px;
+    padding: 0.5em 2em; }
 
 footer {
   background-color: #0f3e57;

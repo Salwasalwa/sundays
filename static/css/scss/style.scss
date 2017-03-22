@@ -123,6 +123,11 @@ main {
         }
         #carousel-text  {
             text-align: right;
+            a{
+                text-decoration: none;
+                color: $chocola;
+                font-size: 30px;
+            }
             h3 {
                 padding-bottom: 1em;
                 font-family: $serif;
@@ -133,18 +138,39 @@ main {
                 font-size: 15px;
                 padding: 0.5em 4em;
             }
-            h3:nth-child(4),
+
+            h3:nth-child(5),
             p {
                 text-align: left;
             }
         }
+
     }
-    .hide-bullets {
+
+    .hide-bullets { //slider
         list-style: none;
         margin-left: -40px;
         margin-top: 20px;
     }
 
+    #lePanier {
+        #titlePanier{
+            background-color: $chocolafonce;
+            color: white;
+
+        }
+        td {
+            color: $chocolafonce;
+            font-size: 15px;
+        }
+    }
+
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-success,
+    .btn-success:hover{
+        @include button(white, $chocola);
+    }
 }
 
 footer {
