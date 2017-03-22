@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "bootstrapvalidator": "bootstrapValidator#^0.5.3",
+    "pwstrength-bootstrap": "^2.0.8"
   }
 }

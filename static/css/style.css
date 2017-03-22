@@ -134,6 +134,21 @@ main {
     border: 1px solid #a28f61;
     border-radius: 3px;
     padding: 0.5em 2em; }
+  main form #password {
+    margin-bottom: 0.5em; }
+  main form #btnSubmit {
+    color: white;
+    background-color: #a28f61;
+    border: 1px solid #a28f61;
+    border-radius: 3px;
+    padding: 0.5em 2em; }
+  main form #reset {
+    /*margin-left: 5%;*/
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    padding: 0.5em 2em; }
 
 footer {
   background-color: #0f3e57;
