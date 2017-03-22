@@ -37,7 +37,13 @@ header {
         }
     }
 
-    div:nth-child(2) > div:nth-child(1) {
+    div:nth-child(3) > div:nth-child(1) {
+        text-align: right;
+        padding-right: 5%;
+        font-size: 20px;
+        color: white;
+    }
+    article {
         text-align: center;
         color: white;
         padding: 80px 0;
@@ -62,12 +68,13 @@ header {
             margin-top: 3em;
         }
     }
-
-    div:nth-child(3) > div:nth-child(1) {
+    p {
         text-align: right;
         padding-right: 5%;
+        padding-bottom: 5%;
         font-size: 20px;
         color: white;
+        margin-bottom: 0;
     }
 }
 
@@ -116,6 +123,11 @@ main {
             margin: 0;
         }
     }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     #slider {
 
         .item img {
@@ -138,7 +150,7 @@ main {
                 font-size: 15px;
                 padding: 0.5em 4em;
             }
-            #carousel-text > h3:nth-child(5)
+            
             h3:nth-child(5),
             p {
                 text-align: left;
