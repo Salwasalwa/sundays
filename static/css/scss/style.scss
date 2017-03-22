@@ -3,11 +3,10 @@
 
 body {
     background-color: #232323;
-
 }
 
 header {
-    background-color:$chocolafonce;
+    background-color: $chocolafonce;
     width: 100%;
 
     .navbar {
@@ -30,12 +29,11 @@ header {
     }
 
     .navbar-default .navbar-nav {
-         > .active > a:focus,
+         > .active > a,
          > .active > a:hover,
-        > .active > a {
+        > .active > a:focus {
             background-color: transparent;
             color: white;
-
         }
     }
 
@@ -76,7 +74,7 @@ header {
 main {
     background-color: #f7f7f7;
     width: 100%;
-    padding: 2.5em 2.5em 5em 2.5em;
+    padding: 2.5em 2.5em 5em;
 
     h2 {
         text-align: center;
@@ -86,12 +84,11 @@ main {
     }
 
     article {
-        margin: auto auto 1em auto;
+        margin: auto auto 1em;
         background-color: white;
         border-radius: 5px;
         padding-bottom: 0.5em;
         font-family: $abel;
-
 
         img {
             width: 100%;
@@ -99,6 +96,7 @@ main {
             margin: auto;
             border-radius: 5px 5px 0 0;
         }
+
         h3 {
             color: $chocola;
             margin-bottom: 0;
@@ -112,19 +110,47 @@ main {
         p {
             padding-left: 1rem;
         }
-        p:nth-child(3){
+
+        p:nth-child(3) {
             color: $fontcolor;
             margin: 0;
         }
-
     }
+    #slider {
+
+        .item img {
+            width: 90%;
+        }
+        #carousel-text  {
+            text-align: right;
+            h3 {
+                padding-bottom: 1em;
+                font-family: $serif;
+                font-weight: bold;
+            }
+            button {
+                @include button(white, $chocola);
+                font-size: 15px;
+                padding: 0.5em 4em;
+            }
+            h3:nth-child(4),
+            p {
+                text-align: left;
+            }
+        }
+    }
+    .hide-bullets {
+        list-style: none;
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+
 }
 
 footer {
     background-color: #0f3e57;
     padding: 2.5em;
     font-family: $serif;
-
 
     h4 {
         color: white;
